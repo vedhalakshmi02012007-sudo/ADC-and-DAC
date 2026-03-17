@@ -1,49 +1,3 @@
-## Experiment 7 (a): Analog to Digital Converter (ADC) using Proteus
-## Aim
-To design and simulate an Analog to Digital Converter (ADC) circuit using Proteus and observe the conversion of an analog input voltage into its equivalent digital output.
-## Apparatus / Software Required
-•	Proteus Design Suite
-•	ADC IC (ADC0804)
-•	Resistors
-•	Capacitor
-•	Potentiometer (for analog input)
-•	Clock components
-•	LED display / Logic probe
-•	Power supply (5V)
-## Theory
-An Analog to Digital Converter (ADC) converts a continuous analog signal into a digital representation. ADCs are widely used in digital systems where analog signals from sensors need to be processed by microcontrollers or computers.
-The ADC0804 is an 8-bit ADC that uses the successive approximation technique for conversion. It converts the analog input voltage into an equivalent 8-bit binary number.
-Important Features
-•	Resolution: 8-bit
-•	Input voltage range: 0–5 V
-•	Conversion method: Successive approximation
-•	Output: Digital binary (D0–D7)
-The digital output is proportional to the input analog voltage.
-## Circuit Diagram
-Design the circuit in Proteus using ADC0804 with:
-•	Analog input from potentiometer
-•	Clock using resistor and capacitor
-•	Output connected to LEDs or logic probes
-## Procedure
-1.	Open Proteus Design Suite.
-2.	Select the following components from the library:
-o	ADC0804
-o	Resistor
-o	Capacitor
-o	Potentiometer
-o	LEDs
-3.	Connect the analog input pin (VIN+) to the potentiometer.
-4.	Connect VIN− to ground.
-5.	Create the clock using resistor and capacitor between CLK pins.
-6.	Connect output pins D0–D7 to LEDs.
-7.	Apply 5V supply to the ADC.
-8.	Run the simulation.
-9.	Vary the potentiometer and observe the digital output.
-
-## Tabulation
-
-## Result
-The Analog to Digital Converter circuit was successfully designed and simulated in Proteus, and the analog input voltage was converted into the corresponding digital output.
 
 ## Experiment 7(b): Digital to Analog Converter (DAC) using Proteus
 ## Aim
@@ -64,6 +18,9 @@ Features
 •	Compatible with digital systems
 The analog output voltage depends on the digital input combination.
 ## Circuit Diagram
+
+<img width="1920" height="1140" alt="Screenshot 2026-03-10 142219" src="https://github.com/user-attachments/assets/d0490a6f-b7b9-456e-8b51-517c6d12c899" />
+
 Design the circuit in Proteus using DAC0808 with:
 •	8 digital switches for binary input
 •	Op-Amp for current to voltage conversion
@@ -82,6 +39,25 @@ o	Digital switches
 7.	Change digital input combinations and observe the output voltage.
 
 ## Tabulation
+
+| S.No | D | C | B | A | Binary Input (DCBA) | Output Voltage (V) |
+|------|---|---|---|---|----------------------|-------------------|
+| 1    | 0 | 0 | 0 | 0 | 0000                 | -0.25            |
+| 2    | 0 | 0 | 0 | 1 | 0001                 | -0.30            |
+| 3    | 0 | 0 | 1 | 0 | 0010                 | -0.38            |
+| 4    | 0 | 0 | 1 | 1 | 0011                 | -0.50            |
+| 5    | 0 | 1 | 0 | 0 | 0100                 | -0.55            |
+| 6    | 0 | 1 | 0 | 1 | 0101                 | -0.63            |
+| 7    | 0 | 1 | 1 | 0 | 0110                 | -0.68            |
+| 8    | 0 | 1 | 1 | 1 | 0111                 | -0.75            |
+| 9    | 1 | 0 | 0 | 0 | 1000                 | -0.80            |
+| 10   | 1 | 0 | 0 | 1 | 1001                 | -1.43            |
+| 11   | 1 | 0 | 1 | 0 | 1010                 | -0.63            |
+| 12   | 1 | 0 | 1 | 1 | 1011                 | -0.68            |
+| 13   | 1 | 1 | 0 | 0 | 1100                 | -0.75            |
+| 14   | 1 | 1 | 0 | 1 | 1101                 | -0.80            |
+| 15   | 1 | 1 | 1 | 0 | 1110                 | -0.38            |
+| 16   | 1 | 1 | 1 | 1 | 1111                 | -0.25            |
 
 ## Result
 The Digital to Analog Converter circuit was successfully designed and simulated in Proteus, and the digital input was converted into corresponding analog voltage.
